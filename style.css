@@ -27,3 +27,8 @@ h1{
     font-weight: bolder;
 
 }
+
+.city{
+    display: flex;
+    justify-content: space-between;
+}
