@@ -1,1 +1,29 @@
-alert ("hello!");
+function updateTime(){
+
+
+
+let losangelesElement= document.querySelector("#los-angeles");
+
+let losAngelesDateElement= losangelesElement.querySelector(".date");
+
+let losAngelesTimeElement= losangelesElement.querySelector(".time");
+
+let losAngelesTime= moment().tz("America/Los_Angeles");
+
+losAngelesDateElement.innerHTML = losAngelesTime.format("dddd, MMMM D, YYYY h:m A");
+losAngelesTimeElement.innerHTML = losAngelesTime.format ("h:mm:ss [<small>] A [</small>]");
+
+let parisElement= document.querySelector("#paris");
+
+let parisDateElement= parisElement.querySelector(".date");
+
+let parisTimeElement= parisElement.querySelector(".time");
+
+let parisTime= moment().tz("Europe/Paris");
+
+parisDateElement.innerHTML = parisTime.format("dddd, MMMM D, YYYY h:m A");
+parisTimeElement.innerHTML = parisTime.format ("h:mm:ss [<small>] A [</small>]");
+
+}(updateTime); setInterval(updateTime, 1000);
+
+
