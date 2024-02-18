@@ -1,5 +1,6 @@
 body{
     background-color: #fafafa; 
+    font-family: sans-serif;
 }
 
 .container {
@@ -15,20 +16,37 @@ select{
     display: block;
     width: 75%;
     border-radius: 10px;
-    font-family: 'Courier New', Courier, monospace;
     padding: 10px;
     font-size: 20px;
 }
 
 h1{
     text-align: center;
-    font-family: 'Courier New', Courier, monospace;
     font-size: 36px;
     font-weight: bolder;
 
 }
 
+h2{
+    margin: 0 0 5px;
+}
 .city{
     display: flex;
+    margin: 20px 0;
     justify-content: space-between;
+    border-bottom: 1px dashed grey;
+}
+
+
+.date{
+    opacity: 0.10;
+}
+.time{
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.time small{
+    font-size: 24px;
+    vertical-align: middle;
 }
