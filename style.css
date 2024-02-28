@@ -1,12 +1,12 @@
 body{
-    background-color: #fafafa; 
+    background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
     font-family: sans-serif;
 }
 
 .container {
-    background-color: #fcfefe; 
+    background-color:transparent; 
     width: 600px;
-    margin: 0 auto;
+    margin: 70px auto;
     padding: 60px;
     border-radius: 15px; 
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
